@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rithivik R | Portfolio</title>
+  <meta name="description" content="Portfolio of Rithivik R - AI & Data Science student building Generative AI and computer vision projects.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Our design file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION BAR ========== -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">RN<span>.</span></a>
+
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contact" class="btn btn-small">Let's talk</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">&#9776;</button>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">AI &amp; DATA SCIENCE STUDENT · PALLADAM, INDIA</p>
+        <h1>Building smart ideas <br><span class="gradient-text">into real products.</span></h1>
+        <p class="hero-sub">
+          Hi, I'm Rithivik. I turn Generative AI and computer vision into working software,
+          from AI legal document generators to real-time traffic management systems.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View my work</a>
+          <a href="https://github.com/Rithivik" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+          <!-- RESUME BUTTON: to add it later, put resume.pdf in the images folder and remove the two lines with <!-- and --> around the next line
+          <a href="images/resume.pdf" class="btn btn-outline" target="_blank" rel="noopener">Resume</a>
+          -->
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <canvas id="network-canvas"></canvas>
+        <p class="fig-label">FIG. 01 — CONNECTED IDEAS</p>
+      </div>
+
+      <a href="#about" class="scroll-hint">Scroll to explore ↓</a>
+    </section>
+
+    <!-- ========== 01 ABOUT ========== -->
+    <section id="about" class="section">
+      <p class="section-number">01 / About</p>
+      <h2>A little about me</h2>
+      <div class="about-grid">
+        <p>
+          I'm Rithivik R, a second-year B.Sc. student in Computer Science with Artificial
+          Intelligence and Data Science at KPR College of Arts Science and Research.
+          I enjoy turning ideas into working software, and I'm focused on building strong
+          foundations in Generative AI and software engineering, one project at a time.
+        </p>
+        <ul class="about-facts">
+          <li><span>Studying</span> B.Sc. CS with AI &amp; Data Science</li>
+          <li><span>College</span> KPR College of Arts Science and Research</li>
+          <li><span>Year</span> II Year</li>
+          <li><span>Focus</span> Generative AI, Software Engineering</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== 02 PROJECTS ========== -->
+    <section id="projects" class="section">
+      <p class="section-number">02 / Projects</p>
+      <h2>Things I've built</h2>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <p class="project-index">PROJECT 01</p>
+          <h3>Smart Traffic System</h3>
+          <p>
+            A real-time AI and IoT traffic management platform. YOLOv8 analyses traffic density
+            at junctions to adjust signal timings and give emergency vehicles priority, with live
+            data streamed to a React dashboard and an ESP32 hardware simulator.
+          </p>
+          <ul class="tags">
+            <li>YOLOv8</li><li>OpenCV</li><li>Flask</li><li>React.js</li><li>Firebase</li><li>ESP32</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/rithu9569-bot/smart-traffic-system" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://drive.google.com/file/d/1OZRBltq9x4rPgwYYQCu0jEmv7jJZplkl/view?usp=sharing" target="_blank" rel="noopener">Demo video ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <p class="project-index">PROJECT 02</p>
+          <h3>LegalEase</h3>
+          <p>
+            An AI legal document generator powered by Google Gemini. Enter the document type,
+            parties, terms and date, and it drafts NDAs, contracts or lease agreements, lets you
+            edit them, and exports branded TXT, DOCX and PDF files.
+          </p>
+          <ul class="tags">
+            <li>Google Gemini</li><li>FastAPI</li><li>Streamlit</li><li>python-docx</li><li>fpdf2</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Rithivik/LegalEase" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <p class="project-index">PROJECT 03</p>
+          <h3>KPRCAS_VC</h3>
+          <p>
+            A virtual chatbot built for my college, KPR College of Arts Science and Research,
+            with a Python backend and a web interface.
+          </p>
+          <ul class="tags">
+            <li>Python</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Rithivik/KPRCAS_VC" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== 03 SKILLS ========== -->
+    <section id="skills" class="section">
+      <p class="section-number">03 / Skills</p>
+      <h2>My toolkit</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="tags"><li>Python</li><li>C</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Frameworks</h3>
+          <ul class="tags"><li>Flask</li><li>FastAPI</li><li>Streamlit</li><li>React.js</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>AI &amp; Data</h3>
+          <ul class="tags"><li>Generative AI</li><li>Google Gemini</li><li>YOLOv8</li><li>OpenCV</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <ul class="tags"><li>VS Code</li><li>Git &amp; GitHub</li><li>Firebase</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 04 JOURNEY ========== -->
+    <section id="journey" class="section">
+      <p class="section-number">04 / Journey</p>
+      <h2>My journey so far</h2>
+
+      <ol class="timeline">
+        <li>
+          <p class="timeline-year">2025</p>
+          <h3>Started B.Sc. CS with AI &amp; Data Science</h3>
+          <p>Joined KPR College of Arts Science and Research to study AI and software development.</p>
+        </li>
+        <li>
+          <p class="timeline-year">2026</p>
+          <h3>Built KPRCAS_VC</h3>
+          <p>Created a virtual chatbot for my college using Python and web technologies.</p>
+        </li>
+        <li>
+          <p class="timeline-year">2026</p>
+          <h3>Built LegalEase</h3>
+          <p>Used Google Gemini with FastAPI and Streamlit to generate and export legal documents.</p>
+        </li>
+        <li>
+          <p class="timeline-year">2026</p>
+          <h3>Built the Smart Traffic System</h3>
+          <p>Combined YOLOv8 computer vision, IoT and a live React dashboard to manage traffic signals.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ========== 05 CONTACT ========== -->
+    <section id="contact" class="section contact">
+      <p class="section-number">05 / Contact</p>
+      <h2>Let's build something together.</h2>
+      <p>Have an idea, an internship, or just want to say hi? My inbox is open.</p>
+
+      <a href="mailto:rithuolive@gmail.com" class="btn email-btn">rithuolive@gmail.com</a>
+
+      <form class="contact-form" action="https://formspree.io/f/mzezqknq" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+        <button type="submit" class="btn">Send message</button>
+      </form>
+
+      <div class="socials">
+        <a href="https://github.com/Rithivik" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/rithivik-r-067498384/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:rithuolive@gmail.com">Email</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Rithivik R. Built from scratch with HTML, CSS &amp; JavaScript.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <!-- Our script file -->
+  <script src="script.js"></script>
+</body>
+</html>
